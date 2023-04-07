@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="" >
+<head>
+  <meta charset="utf-8">
+  <title>Hi</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/js/popup.js"></script> <!-- Добавлен этот тег -->
+
+</head>
+
+<body>
+
+<FORM id="myForm" NAME="Sel1" onsubmit="displayFormContents()">
+  <!-- Анкета -->
+  <script src="/js/popup.js"></script>
+
+  <B>Firstname:</B>
+     <INPUT id="firstname" SIZE=20 onBlur="this.value=this.value.toUpperCase()">
+  <br><B>Name:</B>
+    <INPUT id="name" SIZE=20   onBlur="this.value=this.value.toUpperCase()"></br>
+  <B>Age:</B>
+    <INPUT id="age" SIZE=20   onBlur="this.value=CheckAge(this.value)">
+  <br><B>Phone:</B>
+    <INPUT id="phone" SIZE=20></br>
+  <B>Email:</B>
+    <INPUT id="email" SIZE=20   onBlur="this.value=this.value.toUpperCase()">
+  <br><b>Student at 42?</b> <INPUT TYPE="checkbox" id="student" NAME="ch">
+  <br><b>Male</b>
+    <INPUT TYPE="RADIO" id="gender_male" NAME="Sex" VALUE ="Male">
+  <b>Female</b>
+    <INPUT TYPE="RADIO"  id="gender_female" NAME="Sex" VALUE ="Female">
+  <b>Other</b>
+    <INPUT TYPE="RADIO"  id="gender_other" NAME="Sex" VALUE ="Other"></br>
+  <!-- Кнопки готовности и сброса -->
+  <INPUT TYPE="button" VALUE="Run that sexy Javascript !" onClick="displayFormContents()">
+</FORM>
+
+</body>
+
+</html>
